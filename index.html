@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
-    <title>Slider</title>
+    <title>Parllax site</title>
     <script src="https://kit.fontawesome.com/340fe9cde6.js" crossorigin="anonymous"></script>
 </head>
 
@@ -18,16 +18,16 @@
             <nav>
                 <ul class="menu">
                     <li>
-                        <a href="">HOME <i class="fa-solid fa-house"></i></a>
+                        <a href="#top">HOME <i class="fa-solid fa-house"></i></a>
                     </li>
                     <li>
-                        <a href="">ABOUT US <i class="fa-solid fa-user"></i></a>
+                        <a href="#about">ABOUT US <i class="fa-solid fa-user"></i></a>
                     </li>
                     <li>
-                        <a href="">PORTFOLIO <i class="fa-solid fa-layer-group"></i></a>
+                        <a href="#portfolio">PORTFOLIO <i class="fa-solid fa-layer-group"></i></a>
                     </li>
                     <li>
-                        <a href="">CONTACT <i class="fa-solid fa-address-card"></i></a>
+                        <a href="#contact">CONTACT <i class="fa-solid fa-address-card"></i></a>
                     </li>
                 </ul>
                 <div class="search">
@@ -35,7 +35,7 @@
                 </div>
             </nav>
         </header>
-    <div class="banner bg-1">
+    <div id="top" class="banner bg-1">
         <div class="banner-text">
             My Website
         </div>
@@ -43,8 +43,8 @@
 
 
 
-    <secton class="about-us">
-        <div class="about-text">
+    <secton class="about-us" >
+        <div class="about-text" id="about">
             <div>
                 <h1>
                     ABOUT ME
@@ -87,7 +87,111 @@
         </div>
     </secton>
 
+    <section class="infobar">
+        <div class="infoitem">
+            <h1>14+</h1>
+            <p>Partners</p>
+        </div>
+        <div class="infoitem">
+            <h1>55+</h1>
+            <p>Projects Done</p>
+        </div>
+        <div class="infoitem">
+            <h1>89+</h1>
+            <p>Happy Clients</p>
+        </div>
+        <div class="infoitem">
+            <h1>150+</h1>
+            <p>Mettings</p>
+        </div>
+    </section>
 
+    <div class="portfolio-bg" id="portfolio">
+        <div class="portfolio">
+            <h1>PORTFOLIO</h1>
+        </div>
+    </div>
+
+    <section class="mywork">
+        <div class="my-text">
+            <h1> MY WORK</h1>
+            <p><i>Here are some of my latest lorem work ipsum tipsum.<br>
+                Click on the images to make them bigger</i></p>
+        </div>
+
+        <div class="img-gallery">
+            <div class="img-contianer">
+                <div class="imgs1 img-hover">
+                    
+                </div>
+                <div class="imgs2 img-hover">
+                    
+                </div>
+                <div class="imgs3 img-hover">
+                    
+                </div>
+                <div class="imgs4 img-hover">
+                    
+                </div>
+            </div>
+            <div class="img-contianer">
+                <div class="imgs5 img-hover">
+                    
+                </div>
+                <div class="imgs6 img-hover">
+                    
+                </div>
+                <div class="imgs7 img-hover">
+                   
+                </div>
+                <div class="imgs8 img-hover">
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="more">
+            <a href="#">LOAD MORE</a>
+        </div>
+    </section>
+
+    <div class="contact" id="contact">
+        <h1>CONTACT</h1>
+    </div>
+
+    <section>
+        <div class="details">
+            <h1>WHERE I WORK</h1>
+            <p><i>I'd love your feedback!</i></p>
+        </div>
+        <div class="contact-box">
+            <div class="map-img">
+
+            </div>
+            <div class="form">
+                <p> Chicago, US<br>
+                    Phone: +00 151515<br>
+                    Email: mail@mail.com
+                </p>
+                <p>Swing by for a cup of , or leave me a note:</p>
+                <div class="inputs">
+                    <input type="text" placeholder="NAME" value="NAME">
+                    <input type="email" placeholder="EMAIL" value="EMAIL">
+                </div>
+                <div class="inputs1">
+                    <input type="text" placeholder="MESSAGE" value="MESSAGE">
+                </div>
+                <div class="send">
+                    <a class="send-btn" href="#" >SEND MESSAGE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <a href="#top" >To The Top</a>
+        <p>Copiright &copy; UTSAV SASAPARA</p>
+    </section>
 </body>
 
 </html>
