@@ -405,6 +405,21 @@ a.logo {
     margin-top: 10px;
 }
 
+
+
+
+@media only screen and (max-width:320px)
+{
+    .img-box {
+        margin: 0;
+        min-width: auto;
+    }
+    .ab-text {
+        min-width: 250px;
+    }
+}
+
+
 @media only screen and (max-width:425px) {
     .infoitem {
         width: 100%;
