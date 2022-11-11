@@ -4,9 +4,9 @@
     box-sizing: border-box;
     font-family: 'Heebo', cursive;
 }
-.text-center {
-    text-align: center;
-}
+
+
+/* ####### Header section start */
 header {
     position: fixed;
     z-index: 100;
@@ -14,12 +14,23 @@ header {
     background-color: whitesmoke;
     box-shadow:0px 0px 3px 0px grey ;
 }
+a.logo {
+    font-size: 22px;
+    padding: 5px 0 0 20px;
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+    color: coral;
+}
 .menu {
     display: inline-block;
     padding-left: 10px;
+    float: right;
 }
+
 .menu li {
     display: inline-block;
+    font-size: 16px;
 }
 .menu li a {
     text-decoration: none;
@@ -33,19 +44,21 @@ header {
     background-color: rgb(209, 210, 212);
 }
 
-.search {
-    display: inline-block;
+.toggle-btn {
+    display: none;
     position: absolute;
     right: 0;
-    margin-right:20px;
     padding: 10px 15px;
     transition: all 0.3s;
 }
-.search:hover {
-    background-color: cornflowerblue;
-    color: white;
-}
 
+.toggle-btn label {
+    font-size: 26px;
+    display: none;
+}
+#toggle {
+    display: none;
+}
 
 .bg-1 {
     z-index: -10;
@@ -70,42 +83,52 @@ header {
 }
 
 
+
+/* #######About us section start */
 .about-text {
     text-align: center;
     padding-top: 60px;
+    width:80% ;
+    margin: auto;
 }
 .about-text p {
     text-align: justify;
-}
-.about-text div {
-    width:80% ;
-    margin: auto;
 }
 .about-box {
     width: 80%;
     margin: auto;
     display: flex;
     margin: 30px auto;
+    flex-wrap: wrap;
 }
+
 .img-box {
     flex: 1;
+    /* margin-right: 20px; */
+    min-width: 300px;
+    max-height: 300px;
+    margin: 20px;
+}
+.ab-text {
+    flex: 1;
+    text-align: justify;
+    min-width: 300px;
+    margin: 20px 0;
 }
 .my-pic{
-    width: 400px;
     height: 250px;
     background-image: url('../images/mypic.jpg');
     background-size: cover;
     background-position: center;
 }
-.ab-text {
-    flex: 1;
+.about-box + p {
+    text-align: center;
 }
-
-.p-bar {
+.p-bar-div {
     width: 80%;
     margin: auto;
 }
-.p-bar p {
+.p-bar-div p {
     letter-spacing: 2px;
 }
 .main-bar {
@@ -119,8 +142,7 @@ header {
     padding: 5px 0;
     text-align: center;
     font-weight: bold;
-    color: whitesmoke;
-    
+    color: whitesmoke; 
 }
 .bar-2{
     width: 80%;
@@ -138,7 +160,6 @@ header {
     font-weight: bold;
     color: whitesmoke;
 }
-
 .infobar {
     display: flex;
     background-color: cornflowerblue;
@@ -148,6 +169,9 @@ header {
     margin-top: 40px;
 }
 
+
+
+/* #######Portfolio section start */
 .portfolio-bg {
     z-index: -10;
     background-image: url('../images/portfolio.jpg');
@@ -159,30 +183,27 @@ header {
     justify-content: center;
     align-items: center;
 }
-
 .portfolio h1{
     font-size: 50px;
     letter-spacing: 5px;
     color: whitesmoke;
 }
-
-
-
-
-.mywork {
-    margin: 50px 0;
-}
 .my-text {
     text-align: center;
+    margin-top: 30px;
 }
 .img-gallery {
     width: 80%;
-    margin: auto;
+    margin:20px auto;
 } 
 .img-contianer {
     display: flex;
     justify-content: space-around;
     margin: 20px;
+
+}
+.img-contianer div {
+    margin: 5px;
 }
 .imgs1 {
     width: 250px;
@@ -240,7 +261,6 @@ header {
     background-size: cover;
     background-position: center;    
 }
-
 .img-hover:hover {
     background-color: rgba(255, 255, 255, 0.37);
     opacity: 0.5;
@@ -250,7 +270,7 @@ header {
     display: flex;
     justify-content: center;
     width: 80%;
-    margin: auto;
+    margin: 30px auto;
 }
 .more a {
    display: inline-block;
@@ -264,9 +284,11 @@ header {
 .more a:hover {
     background-color: rgb(24, 99, 238);
     color: whitesmoke;
-
  }
 
+
+
+/* #######contact section start */
 .contact {
     z-index: -10;
     background-image: url('../images/contact.jpg');
@@ -283,14 +305,10 @@ header {
     font-size: 50px;
     letter-spacing: 5px;
 }
-
-
-
-
 .details {
     text-align: center;
     margin-top: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 .contact-box {
     display: flex;
@@ -300,28 +318,34 @@ header {
 }
 .map-img {
     flex: 1;
-    width: 300px;
+    min-width: 210px;
     height: 250px;
     background-image: url('../images/map.jpg');
     background-size: cover;
     background-position: center;
-    padding: 0 30px;
+    margin: 0 30px;
 }
 .form {
     flex: 2;
-    padding:0 30px;
+    margin:0 30px;
+    min-width: 300px;
 }
 .inputs {
     margin-top: 10px;
-  
+    display: flex;
+    width: 100%;
 }
-.inputs input{
-    width: 49.5%;
-
+.inputs div {
+    width: 100%;
+}
+.inputs > div.mr-10{
+    margin-right: 10px;
+}
+.inputs div input{
+    width: 100%;
 }
 .inputs1 input {
     width: 100%;
-
 }
 .inputs input, .inputs1 input{
     border: 2px solid cornflowerblue;
@@ -335,11 +359,9 @@ header {
     color: whitesmoke;
 }
 .send {
-    position: relative;
+    float: right;
 }
 .send-btn {
-    position: absolute;
-    right: 0;
     display: inline-block;
     padding: 10px 20px;
     background-color: cornflowerblue;
@@ -355,6 +377,8 @@ header {
 }
 
 
+
+/* #######footer section start */
 .footer {
     margin-top: 50px;
     display: flex;
@@ -371,7 +395,82 @@ header {
     color: whitesmoke;
     text-decoration: none;
 }
+.footer a:hover {
+    background-color: whitesmoke;
+    color: black;
+    transition: all .4s;
+}
 .footer p{
     color: whitesmoke;
     margin-top: 10px;
+}
+
+@media only screen and (max-width:425px) {
+    .infoitem {
+        width: 100%;
+        text-align: center;
+    }
+    .infobar {
+        flex-wrap: wrap;
+    }
+    .img-contianer {
+        flex-wrap: wrap;
+    }
+    .contact-box {
+        flex-wrap: wrap;
+    }
+    .map-img{
+        min-width: 200px;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width:570px){
+    .toggle-btn label {
+        display: block;
+        cursor: pointer;
+    }
+    .toggle-btn {
+        display: block;
+    }
+    label.toggle-btn {
+        background-color: transparent;
+        color: rgb(3, 90, 250);
+        font-size: 20px;
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    .menu li {
+        display: block;
+        text-align: center;
+    }
+    a.logo {
+        display: none;
+    }
+    #toggle {
+        display: none;
+    }
+    #toggle:checked + .menu {
+        display: block;
+    }
+    .map-img{
+        min-width: 200px;
+        margin-bottom: 20px;
+    }
+    .contact-box {
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width:768px)
+{
+    a.logo {
+        font-size: 18px;
+    }
+    .menu li {
+        font-size: 12px;
+    }
 }
