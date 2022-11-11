@@ -418,6 +418,16 @@ a.logo {
         min-width: 250px;
     }
 }
+@media only screen and (max-width:375px)
+{
+    .img-box {
+        margin: 0;
+        min-width: auto;
+    }
+    .ab-text {
+        min-width: 250px;
+    }
+}
 
 
 @media only screen and (max-width:425px) {
